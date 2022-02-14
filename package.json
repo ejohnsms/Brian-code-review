@@ -1,0 +1,27 @@
+{
+  "name": "test002",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel src/ -d build/",
+    "prepublish": "yarn run build",
+    "test": "jest",
+    "flow": "yarn run flow"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/plugin-syntax-flow": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-flow": "^7.16.7",
+    "babel-jest": "^27.5.1",
+    "babel-plugin-transform-flow-enums": "^0.0.2",
+    "flow-bin": "^0.171.0",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "flow-enums-runtime": "^0.0.6",
+    "flow-typed": "^3.6.1"
+  }
+}
